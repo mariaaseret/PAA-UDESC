@@ -1,0 +1,32 @@
+Este TDA define a interface para uma Lista dinâmica duplamente encadeada genérica homogênea.
+O TDA é representado por uma estrutura que pode ser acessada pela aplicação através
+de um ponteiro. 
+
+Por conveniência um tipo chamado pldde é definido para representar um ponteiro para a
+estrutura:
+
+typedef struct ldde * pldde;
+
+Todas as funções, exceto as de busca, retornam 0 para SUCESSO e 1 para ERRO.
+As funções de busca retornam um ponteiro para o valor pesquisado ou NULL em caso de erro.
+
+ATENÇÃO: Não é necessário liberar nenhuma memória na aplicação.
+
+################ FUNÇÕES PÚBLICAS DISPONÍVEIS #####################
+
+int CriarLista(pldde * lista, int tamanho_dados);
+int DestruirLista(pldde * lista);
+int ReiniciarLista(pldde lista);
+
+int InserirInicio(pldde lista, void * elemento);
+int InserirFim(pldde lista, void * elemento);
+int InserirPos(pldde lista, void * elemento, int posicao);
+
+int RemoverInicio(pldde lista);
+int RemoverFim(pldde lista);
+int RemoverPos(pldde lista, int posicao);
+
+void * BuscarInicio(pldde lista);
+void * BuscarFim(pldde lista);
+void * BuscarPos(pldde lista, int posicao);
+

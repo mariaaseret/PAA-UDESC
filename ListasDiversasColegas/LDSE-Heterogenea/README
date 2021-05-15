@@ -1,0 +1,5 @@
+TDA Lista Dinâmica Simplesmente Encadeada Heterogênea
+
+Para utilizar, inclua o header "lista_interface.h" na aplicação. Todas as funções (exceto listaTamanho e listaVazia) retornam 1 para sucesso e 0 para fracasso. As funções são autoexplicativas.
+
+Exemplo de compilação: gcc main.c lista.c -o main
